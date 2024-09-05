@@ -1,0 +1,20 @@
+html, body{
+ background: rgb(34,195,59);
+ height: 100%;
+background: linear-gradient(253deg, rgba(34,195,59,1) 0%, rgba(27,67,246,1) 100%);
+}
+.head{
+ font-size: 45px;
+text-shadow: 5px 5px 10px black;
+}
+.ageTester{
+ color: whitesmoke;
+}
+
+.bday{
+ border-radius: 25px;
+ padding: 10px;
+ border: none;
+ box-shadow: 0px 0px 15px 1px rgb(8, 8, 8);
+}
+
