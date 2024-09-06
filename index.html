@@ -8,22 +8,33 @@
     <title>Document</title>
   </head>
   <body>
+    <canvas id="confetti"></canvas>
     <div class="container">
       <div class="row">
         <div class="ageTester mt-5 col-12 text-center">
-          <h1 class="col-12 mt-5 mb-3 head">Enter your birthday</h1>
+          <h1 class="col-12 mt-5 mb-3 head">Enter your birth year</h1>
 
           <input
-            class="bday col-2 text-center"
-            type="date"
+            class="bday col-lg-2 col-4 text-center"
+            type="number"
             name="bday"
             id="bday"
+            required
           />
-
-          <button id="mathButton" class="subBttn" type="submit">Submit</button>
+          <div class="col-12 mt-3">
+            <button id="mathButton" class="subBttn" type="submit">
+              Submit
+            </button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="text-center">
+            <p id="message" class="message"></p>
+          </div>
         </div>
       </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
+    <script src="./app.js"></script>
   </body>
-  <script src="./app.js"></script>
 </html>

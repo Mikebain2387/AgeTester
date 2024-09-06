@@ -1,11 +1,11 @@
 html, body{
- background: rgb(34,195,59);
  height: 100%;
+ background: rgb(34,195,59);
 background: linear-gradient(253deg, rgba(34,195,59,1) 0%, rgba(27,67,246,1) 100%);
 }
 .head{
  font-size: 45px;
-text-shadow: 5px 5px 10px black;
+text-shadow: 5px 5px 5px black;
 }
 .ageTester{
  color: whitesmoke;
@@ -15,6 +15,32 @@ text-shadow: 5px 5px 10px black;
  border-radius: 25px;
  padding: 10px;
  border: none;
- box-shadow: 0px 0px 15px 1px rgb(8, 8, 8);
+ box-shadow: 0px 0px 10px 1px rgb(8, 8, 8);
+}
+.bday:focus{
+ transform: scale(1.2);
 }
 
+
+
+
+.message{
+ margin-top: 25px;
+ font-weight: bolder;
+ color: whitesmoke;
+ font-size: 30px;
+ text-shadow: 5px 5px 5px rgb(40, 40, 40);
+}
+
+.subBttn{
+ border: none;
+ padding: 7px;
+ font-size: 20px;
+ border-radius: 20px;
+ color: whitesmoke;
+ background: rgb(255, 42, 0);
+ box-shadow: 0px 0px 10px 1px rgb(8, 8, 8);
+}
+ .subBttn:active{
+  transform: scale(.98);
+ }
