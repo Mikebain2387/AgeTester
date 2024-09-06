@@ -14,15 +14,17 @@ const year = new Date().getFullYear();
 calculate.addEventListener("click", calculateAge)
 
 function calculateAge(){
- if(birthday.value !== ""){
+ if(birthday.value !== "" && birthday.value > 0){
   let bdayYear = birthday.value;
 let age = year - bdayYear;
 
+
+
 if (age < 18){
- message.innerHTML = (`You are only ${age} that is too young.  You can git out`);
+ message.innerHTML = (`You are only ${age} years old, that is too young.  You can git out`);
 
 } else if(age >= 18){
- message.innerHTML =(`Welcome, You are ${age}.  Time to Partyyyyy!!!`);
+ message.innerHTML =(`Welcome, You are ${age} years old.  Time to Partyyyyy!!!`);
  const duration = 15 * 1000,
   animationEnd = Date.now() + duration,
   defaults = { startVelocity: 30, spread: 360, ticks: 60, zIndex: 0 };
@@ -58,6 +60,10 @@ const interval = setInterval(function() {
 
 }
 clearInput()
+}
+else {
+  message.innerHTML = ("Entry not valid, try using an acutal year, jeez")
+  clearInput()
 }
 
 }
