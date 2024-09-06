@@ -21,7 +21,7 @@ let age = year - bdayYear;
 
 
 if (age < 18){
- message.innerHTML = (`You are only ${age} years old, that is too young.  You can git out`);
+ message.innerHTML = (`You are only ${age} years old, that is too young.  You can git out!!`);
 
 } else if(age >= 18){
  message.innerHTML =(`Welcome, You are ${age} years old.  Time to Partyyyyy!!!`);
