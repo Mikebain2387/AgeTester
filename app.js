@@ -22,7 +22,7 @@ if (age < 18){
  message.innerHTML = (`You are only ${age} that is too young.  You can git out`);
 
 } else if(age >= 18){
- message.innerHTML =(` You are ${age} Welcome to the chill zone!!`);
+ message.innerHTML =(`Welcome, You are ${age}.  Time to Partyyyyy!!!`);
  const duration = 15 * 1000,
   animationEnd = Date.now() + duration,
   defaults = { startVelocity: 30, spread: 360, ticks: 60, zIndex: 0 };
