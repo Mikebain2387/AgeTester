@@ -16,7 +16,7 @@ calculate.addEventListener("click", calculateAge)
 function calculateAge(){
  if(birthday.value !== "" && birthday.value > 0){
   let bdayYear = birthday.value;
-let age = year - bdayYear;
+  let age = year - bdayYear;
 
 
 
@@ -25,6 +25,8 @@ if (age < 18){
 
 } else if(age >= 18){
  message.innerHTML =(`Welcome, You are ${age} years old.  Time to Partyyyyy!!!`);
+
+ 
  const duration = 15 * 1000,
   animationEnd = Date.now() + duration,
   defaults = { startVelocity: 30, spread: 360, ticks: 60, zIndex: 0 };
